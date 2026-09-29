@@ -29,7 +29,7 @@ its fonts, and the spacing that makes it easy (and fun) to read.
 
 **Important:** While Generative AI tools such as ChatGPT or Claude.ai can be
 useful for tasks like this, their results often lack creativity and feel
-lifeless. **DO NOT** use AI to generate your webpage or your stylesheet for
+lifeless. **DO NOT** use AI to generate your entire webpage or stylesheet for
 this assignment — this is considered cheating.
 
 However, you **may** use AI to assist with individual elements, but you must
@@ -54,7 +54,8 @@ include a comment in your code to credit the AI:
   "For the Dough," or "Before You Start"
 - At least one extra section of your choice, such as **Tips**, **Serving
   Suggestions**, or **Why This Recipe Works**
-- A citations page for any images or other sources you used
+- A citations page (`citations.html`, already linked in your footer) crediting any
+  images or other sources you used and acknowledging any AI use.
 
 ### CSS Design:
 
@@ -73,23 +74,33 @@ Your stylesheet should customize:
   so your text isn't stretched across the whole screen.
 
 **No layout tools yet!** For this project, your page should flow from top to
-bottom. Do not use `display: flex`, `display: grid`, `float`, or `position`.
-We'll get to those soon.
+bottom. Do not use `display: flex`, `display: grid`, or `position`.
+We'll get to those soon. That means you generally won't be able to put items
+side-by-side in this project (unless you use `float`).
 
 ### Honors Components (in addition to main components):
 
 - Store your color scheme in CSS variables (`--main-color: ...;`) and use
-  them throughout your stylesheet.
+  them throughout your stylesheet. For example:
+
+  ```css
+  :root {
+    --theme-color: #0033a0;
+  }
+  h1 {
+    color: var(--theme-color);
+  }
+  ```
+
 - Use a descendant selector (like `ol li` or `.tip p`) to style elements only
   when they are inside something else.
 - Customize list markers (bullets and numbers) using `list-style` or `::marker`.
-- Add a `:hover` effect to at least one element.
+- Use a pseudo-element (`::before` or `::after`) to add a custom marker to at least one item.
 - Use a "recipe info" box (prep time, cook time, servings — or the
   metaphorical equivalent) styled with a class.
 
 ## Resources
 
-- [Hinkle's HTML Basics textbook](https://trinket.io/thinkle_innovationcharter_org/courses/intro-to-html#/html-basics/tags)
 - [Validity Checker](https://validator.w3.org/nu/) _(ignore character encoding warnings)_
 - [W3Schools CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [MDN: CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
@@ -107,15 +118,15 @@ We'll get to those soon.
 - [CSS Custom Properties (Variables) - W3Schools](https://www.w3schools.com/css/css3_variables.asp)
 - [Styling Lists - MDN](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Styling_lists)
 - [The `::marker` pseudo-element - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/::marker)
-- [The :hover selector](https://www.w3schools.com/cssref/sel_hover.php)
+- [The `::before` and `::after` pseudo-elements - W3Schools](https://www.w3schools.com/css/css_pseudo_elements.asp)
 
 # Recipe Project Rubric
 
 Grading will happen in two phases:
 
-1. You will get an "experimentation" grade based on the quality of your published website.
+1. You will get a "Digital Creation" grade based on the quality of your published website.
 
-2. You will get a "modeling" grade based on your in-class write-up explaining your code and design decisions.
+2. You will get a "Content" grade based on your in-class write-up explaining your code and design decisions.
 
 ## Published Website Rubric
 
@@ -136,6 +147,7 @@ Starred items (\*) are for honors students.
     <td><ul>
           <li>The recipe includes a title, introduction, image, ingredient list, and numbered instructions.</li>
           <li>Headings (<code>h1</code>, <code>h2</code>, <code>h3</code>) are used in a logical order.</li>
+          <li>The citations page credits all images, sources, and any AI use.</li>
         </ul></td>
     <td><ul>
           <li>The recipe is complete, creative, and fun to read.</li>
@@ -165,7 +177,7 @@ Starred items (\*) are for honors students.
         </ul></td>
     <td><ul>
           <li>Uses selectors precisely to style exactly the elements intended.</li>
-          <li>Uses descendant selectors, custom list markers, and a <code>:hover</code> effect.*</li>
+          <li>Uses descendant selectors, custom list markers, and a <code>::before</code> or <code>::after</code> pseudo-element.*</li>
         </ul></td>
   </tr>
   <tr>
@@ -175,7 +187,7 @@ Starred items (\*) are for honors students.
     <td><ul>
           <li>Uses padding, margin, and border to group related content.</li>
           <li>Limits the width of the page so text is easy to read.</li>
-          <li>Does not use flex, grid, float, or position.</li>
+          <li>Does not use flex, grid, or position.</li>
         </ul></td>
     <td><ul>
           <li>Spacing makes the page easy to scan: related things are close together, separate sections have clear space between them.</li>
