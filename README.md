@@ -175,7 +175,6 @@ Starred items (\*) are for honors students.
               <li>Padding and margins</li>
             </ul>
           </li>
-          <li>Font size, line height, and width work together so text is easy to read.</li>
         </ul></td>
     <td><ul>
           <li>The recipe layout is highly intentional and carefully crafted.</li>
@@ -198,6 +197,22 @@ Starred items (\*) are for honors students.
     <td><ul>
           <li>Nuanced formatting, e.g. the amount, unit, and ingredient in each ingredient are marked up and styled distinctly.</li>
           <li>Includes a "recipe info" box styled with a class.*</li>
+        </ul></td>
+  </tr>
+  <tr>
+    <th>Design</th>
+    <td><!-- design | 1 --></td>
+    <td><!-- design | 2 --></td>
+    <td><ul>
+          <li>No accessibility problems with color contrast.</li>
+          <li>Fonts are readable.</li>
+          <li>Uses a custom font.</li>
+          <li>Nothing crashes into an edge.</li>
+        </ul></td>
+    <td><ul>
+          <li>Color scheme is thematic, attractive, and fits the recipe.</li>
+          <li>Typography is thoughtfully laid out (typography triangle respected).</li>
+          <li>Padding and margins are tweaked for optimal rhythm.</li>
         </ul></td>
   </tr>
   <tr>
