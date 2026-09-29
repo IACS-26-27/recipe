@@ -178,6 +178,7 @@ Starred items (\*) are for honors students.
         </ul></td>
     <td><ul>
           <li>Uses a variety of rules: the core properties (<code>font-size</code>, <code>line-height</code>, <code>width</code>, <code>padding</code>, <code>color</code>, <code>background-color</code>) plus properties looked up and learned on your own (e.g. <code>box-shadow</code>, <code>text-shadow</code>).</li>
+          <li>Human-written comments say where you learned each new property (e.g. <code>/* box-shadow: learned from MDN */</code>).</li>
           <li>Uses CSS variables and advanced typography settings.*</li>
         </ul></td>
   </tr>
