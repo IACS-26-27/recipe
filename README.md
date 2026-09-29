@@ -45,17 +45,13 @@ include a comment in your code to credit the AI:
 
 ### HTML Structure:
 
-- A title for your recipe (`<h1>`), section headings (`<h2>`), and at least
-  one subheading (`<h3>`) — for example, "For the Sauce" and "For the Dough,"
-  or "Before You Start"
-- A short introduction in paragraphs (`<p>`)
-- An **Ingredients** list (`<ul>`) and an **Instructions** list (`<ol>`)
+- Headings (`<h1>`, `<h2>`, `<h3>`) that show how your recipe is organized
+- Paragraphs (`<p>`)
+- At least one list (`<ul>` or `<ol>`)
 - At least one image (`<img>`) with `alt` text describing it
-- At least one extra section of your choice, such as **Tips**, **Serving
-  Suggestions**, or **Why This Recipe Works**
-- **Semantic groupings:** use `<header>`, `<main>`, and `<footer>` for the
-  big parts of the page, and wrap each part of your recipe (introduction,
-  ingredients, instructions, extra section) in its own `<section>` or `<div>`
+- **Semantic groupings:** `<header>`, `<main>`, and `<footer>` for the big
+  parts of the page, and `<section>` or `<div>` to group the parts of your
+  recipe
 - A citations page (`citations.html`, already linked in your footer) crediting any
   images or other sources you used and acknowledging any AI use.
 
