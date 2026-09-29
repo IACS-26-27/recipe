@@ -112,7 +112,6 @@ side-by-side in this project (unless you use `float`).
 - [Coolors](https://coolors.co/) — generate color schemes, or pull one from an image
 - [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) — make sure your text is readable
 - [Google Fonts](https://fonts.google.com/) — pick a font and copy its `<link>` tag into your `<head>`
-- [Font pairing ideas](https://fontjoy.com/)
 
 ### Honors Resources
 
