@@ -45,33 +45,52 @@ include a comment in your code to credit the AI:
 
 ### HTML Structure:
 
-- A title for your recipe (`<h1>`)
+- A title for your recipe (`<h1>`), section headings (`<h2>`), and at least
+  one subheading (`<h3>`) — for example, "For the Sauce" and "For the Dough,"
+  or "Before You Start"
 - A short introduction in paragraphs (`<p>`)
+- An **Ingredients** list (`<ul>`) and an **Instructions** list (`<ol>`)
 - At least one image (`<img>`) with `alt` text describing it
-- An **Ingredients** section (`<h2>`) with an unordered list (`<ul>`)
-- An **Instructions** section (`<h2>`) with an ordered list (`<ol>`)
-- At least one subheading (`<h3>`) — for example, "For the Sauce" and
-  "For the Dough," or "Before You Start"
 - At least one extra section of your choice, such as **Tips**, **Serving
   Suggestions**, or **Why This Recipe Works**
+- **Semantic groupings:** use `<header>`, `<main>`, and `<footer>` for the
+  big parts of the page, and wrap each part of your recipe (introduction,
+  ingredients, instructions, extra section) in its own `<section>` or `<div>`
 - A citations page (`citations.html`, already linked in your footer) crediting any
   images or other sources you used and acknowledging any AI use.
 
-### CSS Design:
+### What to Style:
 
-Your stylesheet should customize:
+Your stylesheet should have rules for each of these:
+
+- **The page** (`body`): background color, text color, and your main font
+- **Headings** (`h1`, `h2`, `h3`): a heading font, colors, and sizes that make
+  it clear what is most important
+- **Text** (`p`, `li`): a readable font size and `line-height`
+- **Your sections:** `padding`, `margin`, and a `border` or background color
+  so each part of the recipe is clearly grouped
+- **Images:** a size that fits nicely on the page
+- **Header and footer**, including the link to your citations page
+
+### CSS Requirements:
 
 - **Color:** A color scheme of at least 3 colors that fits your recipe, with
   text that is easy to read against its background.
-- **Fonts:** At least one custom font from [Google Fonts](https://fonts.google.com/),
-  and font sizes that make it clear what is most important on the page.
-- **Element selectors:** Rules that change how your elements look
-  (for example `h2 { ... }`, `li { ... }`).
-- **Classes:** At least one class (for example `.tip` or `.warning`) that
-  styles _some_ elements differently from others of the same type.
+- **Fonts:** At least one custom font from [Google Fonts](https://fonts.google.com/).
+- **The typography triangle:** Readable text comes from balancing three things:
+  - `font-size` — how big the letters are
+  - `line-height` — how much space is between the lines
+  - `max-width` — how long each line can get
+
+  Change one and you'll usually need to adjust the others.
+- **Selectors:** Element selectors (`h2 { ... }`), at least one class
+  (`.tip { ... }`) that styles _some_ elements differently from others of the
+  same type, and at least one descendant selector (`.tip p { ... }`) that
+  styles elements only when they are inside something else.
 - **The box model:** `padding`, `margin`, and `border` to group related
-  content and give your page room to breathe, plus a `width` or `max-width`
-  so your text isn't stretched across the whole screen.
+  content and give your page room to breathe.
+- **Organization:** Your `styles.css` is organized into sections with
+  comments explaining what each part styles.
 
 **No layout tools yet!** For this project, your page should flow from top to
 bottom. Do not use `display: flex`, `display: grid`, or `position`.
@@ -92,8 +111,14 @@ side-by-side in this project (unless you use `float`).
   }
   ```
 
-- Use a descendant selector (like `ol li` or `.tip p`) to style elements only
-  when they are inside something else.
+- **Advanced typography:** pair a heading font with a body font, and use at
+  least three of these to fine-tune your text:
+  - `font-weight` (using more than one weight of a font)
+  - `letter-spacing`
+  - `text-transform` (for example, all-caps headings)
+  - `font-variant: small-caps`
+  - `font-variant-numeric: diagonal-fractions` (makes 1/2 look like ½)
+  - `text-align` and `text-indent`
 - Customize list markers (bullets and numbers) using `list-style` or `::marker`.
 - Use a pseudo-element (`::before` or `::after`) to add a custom marker to at least one item.
 - Use a "recipe info" box (prep time, cook time, servings — or the
@@ -106,6 +131,7 @@ side-by-side in this project (unless you use `float`).
 - [W3Schools CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [MDN: CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
 - [MDN: The Box Model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
+<!-- TODO: add typography triangle resource link(s) -->
 
 ### Color & Font Resources
 
@@ -130,6 +156,8 @@ Grading will happen in two phases:
 
 ## Published Website Rubric
 
+Starred items (\*) are for honors students.
+
 <table border="1">
   <tr>
     <th>Criteria</th>
@@ -139,26 +167,9 @@ Grading will happen in two phases:
     <th>4 - Mastery</th>
   </tr>
   <tr>
-    <th>Recipe Structure</th>
-    <td><!-- structure | 1 --></td>
-    <td><!-- structure | 2 --></td>
-    <td><ul>
-          <li>The recipe includes:
-            <ul>
-              <li>Headings</li>
-              <li>Sections (such as <code>div</code>, <code>main</code>, or <code>section</code>)</li>
-              <li>Lists</li>
-            </ul>
-          </li>
-        </ul></td>
-    <td><ul>
-          <li>Nuanced formatting, e.g. the amount, unit, and ingredient in each ingredient are styled distinctly.</li>
-        </ul></td>
-  </tr>
-  <tr>
-    <th>CSS Design</th>
-    <td><!-- design | 1 --></td>
-    <td><!-- design | 2 --></td>
+    <th>CSS</th>
+    <td><!-- css | 1 --></td>
+    <td><!-- css | 2 --></td>
     <td><ul>
           <li>CSS is used to customize:
             <ul>
@@ -167,16 +178,38 @@ Grading will happen in two phases:
               <li>Padding and margins</li>
             </ul>
           </li>
+          <li>Font size, line height, and width work together so text is easy to read.</li>
         </ul></td>
     <td><ul>
           <li>The recipe layout is highly intentional and carefully crafted.</li>
+          <li>Uses CSS variables and advanced typography settings.*</li>
         </ul></td>
   </tr>
   <tr>
-    <th>Organization & Process</th>
+    <th>HTML</th>
+    <td><!-- html | 1 --></td>
+    <td><!-- html | 2 --></td>
+    <td><ul>
+          <li>The recipe includes:
+            <ul>
+              <li>Headings</li>
+              <li>Sections (such as <code>header</code>, <code>main</code>, <code>section</code>, <code>div</code>, <code>footer</code>)</li>
+              <li>Lists</li>
+            </ul>
+          </li>
+        </ul></td>
+    <td><ul>
+          <li>Nuanced formatting, e.g. the amount, unit, and ingredient in each ingredient are marked up and styled distinctly.</li>
+          <li>Includes a "recipe info" box styled with a class.*</li>
+        </ul></td>
+  </tr>
+  <tr>
+    <th>Process</th>
     <td><!-- process | 1 --></td>
     <td><!-- process | 2 --></td>
-    <td><!-- process | 3 --></td>
+    <td><ul>
+          <li>The site passes validation with minor issues.</li>
+        </ul></td>
     <td><ul>
           <li>CSS is organized into sections with comments.</li>
           <li>A steady log of commit messages shows progress over time.</li>
@@ -194,43 +227,24 @@ This will be an assessment based on an in-class write-up you will do with questi
     <th>1 - Beginning</th>
     <th>2 - Developing</th>
     <th>3 - Proficient</th>
-    <th>4 - Excellent</th>
+    <th>4 - Mastery</th>
   </tr>
   <tr>
-    <th>CSS Rules & Selectors</th>
-    <td><!-- Rules | 1 --></td>
-    <td><!-- Rules | 2 --></td>
-    <td><ul><li>Explains the parts of a CSS rule (selector, property, value) and what an element selector does.</li></ul></td>
+    <th>CSS Properties & Values</th>
+    <td><!-- properties | 1 --></td>
+    <td><!-- properties | 2 --></td>
+    <td><ul><li>Identifies the selector, property, and value in a CSS rule, and explains what common properties (such as <code>color</code>, <code>font-size</code>, <code>padding</code>, <code>margin</code>) do.</li></ul></td>
     <td><ul>
-          <li>Explains the difference between an element selector and a class selector, and when to use each.</li>
-          <li>Predicts which elements a given selector will style.</li>
+          <li>Predicts how changing a value will change the page, and chooses properties and values to create a described effect.</li>
         </ul></td>
   </tr>
   <tr>
-    <th>The Box Model</th>
-    <td><!-- BoxModel | 1 --></td>
-    <td><!-- BoxModel | 2 --></td>
-    <td><ul><li>Identifies content, padding, border, and margin in a diagram or on a page.</li></ul></td>
+    <th>Selectors</th>
+    <td><!-- selectors | 1 --></td>
+    <td><!-- selectors | 2 --></td>
+    <td><ul><li>Explains which elements an element selector (<code>li</code>) and a class selector (<code>.tip</code>) will style.</li></ul></td>
     <td><ul>
-          <li>Explains when to use padding versus margin to create a specific effect.</li>
-        </ul></td>
-  </tr>
-  <tr>
-    <th>Design Choices</th>
-    <td><!-- Design | 1 --></td>
-    <td><!-- Design | 2 --></td>
-    <td><ul><li>Describes the color and font choices made on the website.</li></ul></td>
-    <td><ul>
-          <li>Explains how color, typography, and spacing choices support the mood of the recipe and make it easy to read.</li>
-        </ul></td>
-  </tr>
-  <tr>
-    <th>The Cascade (Honors)</th>
-    <td><!-- Cascade | 1 --></td>
-    <td><!-- Cascade | 2 --></td>
-    <td><ul><li>Explains what happens when two rules style the same element.</li></ul></td>
-    <td><ul>
-          <li>Explains how inheritance and specificity decide which rule wins.</li>
+          <li>Predicts which elements a descendant (nested) selector like <code>.tip p</code> will style, and writes a selector to target a described element.</li>
         </ul></td>
   </tr>
 </table>

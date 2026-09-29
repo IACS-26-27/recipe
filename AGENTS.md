@@ -14,7 +14,7 @@ honors components, and the rubric. Help the student check where they stand again
 - This is a **vanilla HTML + CSS** project: `index.html`, `styles.css`, and `citations.html`.
 - **No layout tools.** Do not suggest or write `display: flex`, `display: grid`, `position`
   (`absolute`, `relative`, `fixed`, `sticky`), or `transform` for layout. The page should flow
-  from top to bottom. The rubric checks this. `float` is allowed if a student really wants
+  from top to bottom. `float` is allowed if a student really wants
   something side by side. If a student asks for flexbox or grid, explain that those come in the
   next project, and show how to reach their goal with the box model instead.
 - **No JavaScript**, no CSS frameworks or libraries (Bootstrap, Tailwind, etc.), no build
@@ -29,14 +29,10 @@ honors components, and the rubric. Help the student check where they stand again
 
 - HTML structure: headings, paragraphs, lists, links, images, tables, and relative paths.
 
-### What this project teaches (lean into these)
+### Requirements and rubric
 
-- Element selectors, class selectors, and how CSS rules map onto HTML.
-- Color schemes with readable contrast (point them at the WebAIM contrast checker).
-- Typography: Google Fonts, font sizes that create visual hierarchy, and `line-height`.
-- The box model: `padding`, `margin`, `border`, plus `width` / `max-width` to limit line length.
-- Honors: CSS variables (`--main-color`), descendant selectors (`.tip p`), `list-style` /
-  `::marker`, `::before` / `::after`, and a styled "recipe info" box.
+The required components, honors components, and rubric live in `README.md`. Read them there
+rather than relying on a summary here, and help the student check their work against them.
 
 ## Student authorship
 
