@@ -101,6 +101,7 @@ side-by-side in this project (unless you use `float`).
 
 ## Resources
 
+- [Mr. H's YouTube Tutorials](https://www.youtube.com/playlist?list=PLMEapm-6E2Mg) 
 - [Validity Checker](https://validator.w3.org/nu/) _(ignore character encoding warnings)_
 - [W3Schools CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [MDN: CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
