@@ -130,85 +130,56 @@ Grading will happen in two phases:
 
 ## Published Website Rubric
 
-Starred items (\*) are for honors students.
-
 <table border="1">
   <tr>
     <th>Criteria</th>
     <th>1 - Beginning</th>
     <th>2 - Developing</th>
     <th>3 - Proficient</th>
-    <th>4 - Excellent</th>
+    <th>4 - Mastery</th>
   </tr>
   <tr>
-    <th>Structure</th>
+    <th>Recipe Structure</th>
     <td><!-- structure | 1 --></td>
     <td><!-- structure | 2 --></td>
     <td><ul>
-          <li>The recipe includes a title, introduction, image, ingredient list, and numbered instructions.</li>
-          <li>Headings (<code>h1</code>, <code>h2</code>, <code>h3</code>) are used in a logical order.</li>
-          <li>The citations page credits all images, sources, and any AI use.</li>
+          <li>The recipe includes:
+            <ul>
+              <li>Headings</li>
+              <li>Sections (such as <code>div</code>, <code>main</code>, or <code>section</code>)</li>
+              <li>Lists</li>
+            </ul>
+          </li>
         </ul></td>
     <td><ul>
-          <li>The recipe is complete, creative, and fun to read.</li>
-          <li>Includes a "recipe info" box styled with a class.*</li>
-        </ul></td>
-  </tr>
-  <tr>
-    <th>Color & Typography</th>
-    <td><!-- typography | 1 --></td>
-    <td><!-- typography | 2 --></td>
-    <td><ul>
-          <li>Uses a color scheme of at least 3 colors with readable contrast.</li>
-          <li>Uses a custom font and font sizes that show a clear visual hierarchy.</li>
-        </ul></td>
-    <td><ul>
-          <li>Color and font choices match the mood of the recipe.</li>
-          <li>Colors are stored in CSS variables.*</li>
+          <li>Nuanced formatting, e.g. the amount, unit, and ingredient in each ingredient are styled distinctly.</li>
         </ul></td>
   </tr>
   <tr>
-    <th>Selectors</th>
-    <td><!-- selectors | 1 --></td>
-    <td><!-- selectors | 2 --></td>
+    <th>CSS Design</th>
+    <td><!-- design | 1 --></td>
+    <td><!-- design | 2 --></td>
     <td><ul>
-          <li>Uses element selectors to style the page.</li>
-          <li>Uses at least one class to style some elements differently from others.</li>
+          <li>CSS is used to customize:
+            <ul>
+              <li>Fonts</li>
+              <li>Colors</li>
+              <li>Padding and margins</li>
+            </ul>
+          </li>
         </ul></td>
     <td><ul>
-          <li>Uses selectors precisely to style exactly the elements intended.</li>
-          <li>Uses descendant selectors, custom list markers, and a <code>::before</code> or <code>::after</code> pseudo-element.*</li>
-        </ul></td>
-  </tr>
-  <tr>
-    <th>Box Model & Spacing</th>
-    <td><!-- boxmodel | 1 --></td>
-    <td><!-- boxmodel | 2 --></td>
-    <td><ul>
-          <li>Uses padding, margin, and border to group related content.</li>
-          <li>Limits the width of the page so text is easy to read.</li>
-          <li>Does not use flex, grid, or position.</li>
-        </ul></td>
-    <td><ul>
-          <li>Spacing makes the page easy to scan: related things are close together, separate sections have clear space between them.</li>
+          <li>The recipe layout is highly intentional and carefully crafted.</li>
         </ul></td>
   </tr>
   <tr>
-    <th>Correctness</th>
-    <td><!-- correctness | 1 -->The site has multiple significant errors when checked.</td>
-    <td><!-- correctness | 2 --></td>
-    <td><ul><li>The site passes validation with minor issues.</li></ul></td>
+    <th>Organization & Process</th>
+    <td><!-- process | 1 --></td>
+    <td><!-- process | 2 --></td>
+    <td><!-- process | 3 --></td>
     <td><ul>
-          <li>The site is fully compliant and passes all checks.</li>
-        </ul></td>
-  </tr>
-  <tr>
-    <th>Published URL</th>
-    <td><!-- url | 1 -->Site not published / URL doesn't work</td>
-    <td><!-- url | 2 --></td>
-    <td><ul><li>The site is accessible without issues.</li></ul></td>
-    <td><ul>
-          <li>All resources (images, fonts, stylesheet) load correctly and consistently.</li>
+          <li>CSS is organized into sections with comments.</li>
+          <li>A steady log of commit messages shows progress over time.</li>
         </ul></td>
   </tr>
 </table>
