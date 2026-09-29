@@ -82,7 +82,8 @@ Your stylesheet should have rules for each of these:
   - `line-height` — how much space is between the lines
   - `max-width` — how long each line can get
 
-  Change one and you'll usually need to adjust the others.
+  Change one and you'll usually need to adjust the others. See
+  [The Equilateral Triangle of a Perfect Paragraph](https://css-tricks.com/equilateral-triangle-perfect-paragraph/).
 - **Selectors:** Element selectors (`h2 { ... }`), at least one class
   (`.tip { ... }`) that styles _some_ elements differently from others of the
   same type, and at least one descendant selector (`.tip p { ... }`) that
@@ -131,7 +132,7 @@ side-by-side in this project (unless you use `float`).
 - [W3Schools CSS Tutorial](https://www.w3schools.com/css/default.asp)
 - [MDN: CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors)
 - [MDN: The Box Model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
-<!-- TODO: add typography triangle resource link(s) -->
+- [CSS-Tricks: The Equilateral Triangle of a Perfect Paragraph](https://css-tricks.com/equilateral-triangle-perfect-paragraph/) — the typography triangle
 
 ### Color & Font Resources
 
